@@ -1,0 +1,46 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+.content{
+    padding: 10%;
+}  
+.title{
+
+    padding-bottom: 10%;
+    text-align: center;
+}
+
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  /* Style pour le bouton "Cancel" */
+  button.cancel {
+    background-color: #f1f1f1; /* Fond gris clair */
+    color: #000; /* Texte noir */
+    border: 1px solid #ccc; /* Bordure légère */
+  }
+  
+  button.cancel:hover {
+    background-color: #e0e0e0; /* Fond gris plus foncé au survol */
+  }
+  
+  /* Style pour le bouton "Save" */
+  button.save {
+    background-color: #bf1167; 
+    color: #fff; 
+  }
+  
+  button.save:hover {
+    background-color: #0056b3; /* Bleu plus foncé au survol */
+  }
+  

@@ -1,0 +1,33 @@
+<div  class="content">
+    <div mat-dialog-title class="title" >
+        <h1> STUDENT FORM</h1> 
+    </div>
+    <form [formGroup]="studentForm" (ngSubmit)="onFormSubmit()">
+        <div mat-dialog-content >
+        <mat-form-field appearance="outline">
+            <mat-label>Firstname</mat-label>
+            <input matInput formControlName="firstname">
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Lastname</mat-label>
+            <input matInput formControlName="lastname">  
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Classe</mat-label>
+            <mat-select formControlName="classe">
+                <mat-option *ngFor="let classe of Classes" [value]="classe.value">{{ classe.viewValue }}</mat-option>
+              </mat-select> 
+        </mat-form-field>
+        </div>    
+        <div mat-dialog-actions >
+        <button mat-raised-button (click)="onFormSubmit()" class="save" type="submit">
+            save
+        </button>
+        <button mat-raised-button  (click)="onCancel()" class="cancel">
+            cancel
+        </button>
+    </div>
+</form>
+</div>
+
+
